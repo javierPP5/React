@@ -1,0 +1,49 @@
+table {
+background-color: antiquewhite;
+border: 2px solid #202020 ;
+}
+
+table th, td{
+  padding: 6px;
+  border: 1px solid #202020;
+  text-align: left;
+}
+
+.main {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 2rem;
+  align-items: center;
+}
+
+.colorInput {
+  color: #202020 !important;
+}
+
+.btnEditar {
+  background-color: #1d7120;
+  color: white;
+  padding: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+.btnEliminar {
+  background-color: #be5252;
+  color: white;
+  padding: 5px;
+  border: none;
+  cursor: pointer;
+  margin-left: 2px;
+}
+
+.btnCancelar {
+  background-color: #be5252;
+  color: white;
+  padding: 5px;
+  border: none;
+  cursor: pointer;
+  margin-left: 2px;
+}

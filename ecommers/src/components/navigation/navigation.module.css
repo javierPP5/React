@@ -1,0 +1,167 @@
+
+.navContainer {
+    display: flex;
+    align-items: center;
+    gap: 1.75rem;
+    list-style: none;
+    flex-wrap: wrap;
+}
+
+.contenedorIconos {
+      display: flex;
+    align-items: center;
+    gap: 1.75rem;
+    list-style: none;
+    flex-wrap: wrap;
+}
+
+.searchBar {
+    display: flex;
+    align-items: center;
+    background-color: #FFFFFF;
+    border-radius: 50px; 
+    padding: 0.6rem 1rem;
+    min-width: 250px;
+}
+
+.searchIcon {
+    color: #757575; 
+    margin-right: 0.5rem;
+}
+
+.searchInput {
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 1rem;
+    color: #333; 
+    width: 100%;
+}
+
+.searchInput::placeholder {
+    color: #757575; 
+}
+
+.iconButton {
+    background: none;
+    border: none;
+    color: #FFFFFF; 
+    padding: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transition: background-color 0.2s ease-in-out;
+    text-decoration: none; 
+}
+
+.iconButton:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.active {
+    background-color: rgba(255, 255, 255, 0.2); 
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.5); 
+}
+
+.userMenuContainer {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.dropdownMenu {
+  position: absolute;
+  top: 45px;
+  right: 0;
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  z-index: 100;
+  min-width: 160px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.nombre {
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: #333;
+  margin: 0;
+}
+
+.logoutButton {
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.logoutButton:hover {
+  background-color: #c0392b;
+}
+
+/* Modo claro (por defecto) */
+body {
+  background-color: #fdfdfd;
+  color: #222;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Modo oscuro */
+body.dark-mode {
+  background-color: #1e1e1e;
+  color: #f1f1f1;
+}
+
+/*  inputs y nav */
+.dark-mode input {
+  background-color: #2b2b2b;
+  color: #f1f1f1;
+  border: 1px solid #444;
+}
+
+.dark-mode nav {
+  background-color: #2b2b2b;
+}
+
+.dark-mode button {
+  color: #f1f1f1;
+}
+
+.adminLink {
+  display: inline-block;
+  padding: 12px 20px;
+  border-radius: 8px;
+  background: linear-gradient(135deg, #4f46e5, #6366f1);
+  color: white;
+  font-weight: 600;
+  text-decoration: none;
+  transition: 
+    transform 0.15s ease,
+    box-shadow 0.2s ease,
+    background 0.3s ease;
+}
+
+.adminLink:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 18px rgba(79, 70, 229, 0.35);
+  background: linear-gradient(135deg, #4338ca, #4f46e5);
+}
+
+.adminLink:active {
+  transform: translateY(0);
+  box-shadow: 0 4px 12px rgba(79, 70, 229, 0.25);
+}
+
+.adminLink:focus {
+  outline: 3px solid rgba(99, 102, 241, 0.5);
+  outline-offset: 2px;
+}
+

@@ -1,0 +1,59 @@
+<!--
+FLEX - EMPUJES:
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FLEX - EMPUJES</title>
+    <style>
+      .item--1 {
+        background-color: blueviolet;
+        margin-top: auto;
+      }
+      .item--2 {
+        background-color: orangered;
+        margin-bottom: auto;
+      }
+      .item--3 {
+        background-color: green;
+      }
+      .item--4 {
+        background-color: goldenrod;
+      }
+
+      .item {
+        padding: 20px;
+        width: 300px;
+      }
+      .container {
+        padding: 20px;
+        font-family: sans-serif;
+        background-color: rgba(0, 0, 0, 0.537);
+        font-size: 40px;
+        margin: 40px;
+        width: 85vw;
+        height: 85vh;
+        display: flex;
+        gap: 10px;
+        justify-content: space-between;
+        align-items: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="item item--1">child 1</div>
+      <div class="item item--2">child 2</div>
+      <div class="item item--3">child 3</div>
+      <div class="item item--4">child 4</div>
+    </div>
+  </body>
+</html>

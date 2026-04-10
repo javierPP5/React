@@ -1,0 +1,52 @@
+
+.inputContainer {
+  position: relative;
+  width: 100%;
+  margin: 1.5rem 0;
+  overflow: hidden;
+}
+
+.inputContainer input {
+  width: 100%;
+  border: none;
+  border-bottom: 1.5px solid #363535;
+  background: transparent;
+  padding: 10px 0 5px 0;
+  font-size: 16px;
+  outline: none;
+  color: #111;
+  transition: border-color 0.3s;
+  margin-bottom: 10px;
+
+  label {
+  position: relative;
+  top: 10px;
+  left: 0;
+  color: #383838;
+  font-size: 16px;
+  pointer-events: none;
+  transition: 0.3s ease all;
+
+}
+
+}
+
+
+/* Cuando el input tiene foco o texto */
+.inputContainer input:focus {
+  border-bottom: 2px solid #2563eb;
+}
+
+.inputContainer input:focus + label,
+.inputContainer input:not(:placeholder-shown) + label {
+  top: -12px;
+  font-size: 12px;
+  color: #2563eb;
+  font-weight: 500;
+}
+
+.error {
+  color: #dc2626;
+  font-size: 0.875rem;
+  margin-top: 0.25rem;
+}

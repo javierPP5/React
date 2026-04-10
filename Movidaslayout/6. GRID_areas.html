@@ -1,0 +1,111 @@
+<!--
+GRID - areas
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GRID - areas</title>
+    <style>
+      .container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas:
+          "header header header"
+          "main main sidebar"
+          "content content content"
+          "footer footer footer";
+        gap: 10px;
+        justify-content: center;
+        align-content: center;
+        gap: 30px;
+
+        padding: 20px;
+        font-family: sans-serif;
+        background-color: rgba(0, 0, 0, 0.537);
+        font-size: 40px;
+        margin: 40px auto;
+        width: 1200px;
+        height: 400px;
+      }
+
+      .container__item {
+        padding: 20px;
+        font-size: 20px;
+        text-align: center;
+        color: white;
+      }
+
+      .header {
+        grid-area: header;
+        /*     grid-column: 1 / -1;
+        grid-column: 1 / 4;
+        grid-column: 1 / span 3
+        grid-row: 1; */
+        background-color: blueviolet;
+      }
+      .main {
+        grid-area: main;
+        /*   grid-column: 1 / span 2;
+        grid-column: 1 / 3;
+        grid-row: 2; */
+        background-color: orangered;
+      }
+      .sidebar {
+        grid-area: sidebar;
+        /*     grid-column: 3;
+        grid-row: 2; */
+        background-color: green;
+      }
+      .content {
+        grid-area: content;
+        /*   grid-column: 1 / -1;
+        grid-row: 3; */
+        background-color: goldenrod;
+      }
+      .footer {
+        /* grid-column: 1 / -1;
+        grid-row: 4; */
+        grid-area: footer;
+        background-color: steelblue;
+      }
+
+      @media (max-width: 900px) {
+        .container {
+          grid-template-columns: repeat(2, 1fr);
+          grid-template-areas:
+            "header header"
+            "main sidebar"
+            "content content"
+            "footer footer";
+        }
+      }
+
+      @media (max-width: 600px) {
+        .container {
+          grid-template-columns: 1fr;
+          grid-template-areas:
+            "header"
+            "main"
+            "sidebar"
+            "content"
+            "footer";
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header container__item">Header</div>
+      <div class="main container__item">Main</div>
+      <div class="sidebar container__item">Sidebar</div>
+      <div class="content container__item">Content</div>
+      <div class="footer container__item">Footer</div>
+    </div>
+  </body>
+</html>

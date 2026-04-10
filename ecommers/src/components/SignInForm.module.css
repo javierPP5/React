@@ -1,0 +1,85 @@
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 2rem;
+  overflow: hidden;
+  align-items: center;
+}
+
+.divTitulo {
+    padding-top: 30px;
+}
+
+.Botones {
+  background-color: #6d5f53; 
+  color: white;
+  padding: 12px 28px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: bold;
+  text-decoration: none; 
+  text-align: center;
+  border: none;
+  font-family: Arial, sans-serif;
+  transition: background-color 0.3s ease;
+  width: auto; 
+  margin-top: 1rem; 
+  width: 300px;
+  box-shadow: 0 2px 5px #0000000d;
+}
+
+.Botones:hover {
+  background-color: #5a4a3c;
+}
+
+.divBotones {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  overflow: hidden;
+  align-items: center;
+}
+
+.input-container {
+  position: relative;
+  width: 100%;
+  margin: 1.5rem 0;
+}
+
+/* Estilo base del input */
+.input-container input {
+  width: 100%;
+  border: none;
+  border-bottom: 1.5px solid #444;
+  background: transparent;
+  padding: 10px 0 5px 0;
+  font-size: 16px;
+  outline: none;
+  color: #111;
+  transition: border-color 0.3s;
+}
+
+/* Label flotante */
+.input-container label {
+  position: absolute;
+  top: 10px;
+  left: 0;
+  color: #444;
+  font-size: 16px;
+  pointer-events: none;
+  transition: 0.3s ease all;
+}
+
+/* Efecto cuando el input está enfocado o tiene texto */
+.input-container input:focus {
+  border-bottom: 2px solid #2563eb;
+}
+
+.input-container input:focus + label,
+.input-container input:not(:placeholder-shown) + label {
+  top: -12px;
+  font-size: 12px;
+  color: #2563eb;
+  font-weight: 500;
+}

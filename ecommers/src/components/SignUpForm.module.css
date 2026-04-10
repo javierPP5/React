@@ -1,0 +1,32 @@
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 2rem;
+  overflow: hidden;
+  align-items: center;
+}
+
+.divTitulo {
+    padding-top: 30px;
+}
+
+.botones {
+  background-color: #6d5f53; 
+  color: white;
+  padding: 12px 28px;
+  border-radius: 20px;
+  font-weight: bold;
+  text-decoration: none; 
+  text-align: center;
+  border: none;
+  font-family: Arial, sans-serif;
+  transition: background-color 0.3s ease;
+  width: auto; 
+  margin-top: 1rem; 
+  width: 300px;
+}
+
+.botones:hover {
+  background-color: #5a4a3c;
+}

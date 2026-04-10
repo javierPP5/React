@@ -1,0 +1,14 @@
+.container-nav {
+    display: flex;
+    gap: 0.5rem;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    color: var(--primary-background);
+    a {
+        text-decoration: none;
+    }
+    a:hover, .active {
+        color: red
+    }
+}

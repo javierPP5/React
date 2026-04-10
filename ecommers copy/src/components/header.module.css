@@ -1,0 +1,41 @@
+
+.header {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    min-height: 95px; 
+    padding: 0 2.5rem; 
+    flex-wrap: wrap;
+}
+
+
+.background-header {
+    background-color: rgba(44, 78, 81, 1); 
+    color: #FFFFFF;
+}
+
+.logoContainer {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+ 
+}
+
+.logo {
+  height: 55px; 
+  width: auto; 
+}
+
+.enlace {
+  
+  text-decoration: none; 
+  color: inherit; 
+}
+
+.title {
+  font-family: 'Limelight', cursive;
+  font-size: 1.5rem;
+  font-weight: 600;
+  font-family: 'Times New Roman', Times, serif; 
+  letter-spacing: 0.1em;
+}

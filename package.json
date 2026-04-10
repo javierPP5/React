@@ -1,0 +1,16 @@
+{
+  "dependencies": {
+    "react-alice-carousel": "^2.9.1",
+    "react-icons": "^5.5.0",
+    "react-responsive-carousel": "^3.2.23",
+    "react-router-dom": "^7.9.4",
+    "react-slick": "^0.31.0",
+    "react-toastify": "^11.0.5",
+    "slick-carousel": "^1.8.1",
+    "swiper": "^12.0.3",
+    "use-debounce": "^10.0.6"
+  },
+  "devDependencies": {
+    "sass-embedded": "^1.93.2"
+  }
+}

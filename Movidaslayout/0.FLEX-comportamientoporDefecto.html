@@ -1,0 +1,46 @@
+<!--
+FLEXBOX - COMPORTAMIENTO POR DEFECTO:
+    bailan en fila
+    las columnas flex-start
+    las filas stretch
+
+    Si se invierte la dirección: las columnas stretch, las filas flex-start
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FLEXBOX - COMPORTAMIENTO POR DEFECTO</title>
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    .flex {
+      display: flex;
+      flex-direction: column;
+      background-color: #b90c0c;
+      padding: 10px;
+      height: 300px;
+      gap: 10px;
+    }
+
+    .flex__item {
+      background-color: #03a9f4;
+      padding: 20px;
+      /*    flex: 1; */
+    }
+  </style>
+  <body>
+    <h2>Flexbox por defecto</h2>
+    <div class="flex">
+      <div class="flex__item">1</div>
+      <div class="flex__item">2</div>
+      <div class="flex__item">3</div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Hepta+Slab:wght@1..900&display=swap');
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+  line-height: 1;
+  font-weight: 400;
+  color: #555;
+}
+
+:root {
+  --background-main: #EAEDEE;
+  --background-cardContainer: #BEC8C9;
+  --background-card: #FBF6F5;
+  --color-textos: #0F1B1C;
+  --btn-color: #604B46;
+  --btnAgregar-color: #4A5736;
+  --headerFooter-color: #2C4E51;
+  --modoOscuroBackground-color: #4A5736;
+  --modoOscuroBtn-color: #E3ECD5;
+  --modoOscuroBtnYEnlacesHover-color: #c5ceb8;
+  --modoOscuroContainerCards-color: #3A442A;
+  --modoOscuroTextos-color: #F6F6F6;
+}
+
+.error {
+  color: red;
+  font-size: 14px;
+}
+
+/* modo oscuro*/
+body.dark-mode {
+  background-color: #4A5736;
+
+  main {
+    background-color: #4A5736;
+  }
+
+  h1 {
+    color: var(--modoOscuroTextos-color);
+  }
+
+  h2 {
+    color: var(--modoOscuroTextos-color);
+  }
+
+  h4 {
+    color: var(--modoOscuroTextos-color);
+  }
+
+  input {
+    color: var(--modoOscuroTextos-color);
+  }
+
+  input::placeholder {
+  color: rgb(255, 255, 255);
+  }
+
+  a {
+  color: rgb(255, 255, 255);
+  }
+
+
+  label {
+    color: var(--modoOscuroTextos-color);
+  }
+
+
+  span {
+    color: var(--modoOscuroTextos-color);
+  }
+
+  li:hover {
+    background-color: #4CAF50;
+  }
+
+}
+
+body.dark-mode main h1 {
+  color: #ffffff;
+}

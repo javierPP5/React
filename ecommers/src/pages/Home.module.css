@@ -1,0 +1,141 @@
+/* Ejemplo de código copiado de Google Fonts */
+
+.main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 2rem;
+  overflow: hidden;
+  align-items: center;
+}
+
+
+.card {
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 2px 5px #0000000d;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  flex-wrap: wrap;
+  font-family: 'Hepta Slab', serif;
+
+  text-decoration: none;
+  color: inherit;
+
+  &:hover {
+    transform: scale(1.02);
+    box-shadow: 0 4px 12px #0000001a;
+  }
+
+  
+}
+
+
+.cardFoto {
+  width: 100px;
+  height: 100px;
+  border-radius: 8px;
+  margin-right: 15px;
+  background-size: cover;
+  background-position: center;
+
+  img {
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    object-fit: cover;
+  }
+}
+
+.cardContenido {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+
+  h5 {
+    margin: 8px 0 0 0;
+    font-size: 1rem;
+    color: var(--color-textos);
+  }
+
+  p {
+    margin: 0;
+    font-size: 0.85rem;
+    color: var(--color-textos);
+
+  }
+
+    span {
+    margin: 0;
+    font-size: 1.1rem;
+    color: var(--color-textos) !important;
+  }
+}
+
+.destacadosContainer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  padding: 15px;
+  border-radius: 10px;
+  background-color: var(--background-cardContainer);
+  width: 90%;
+  max-width: 1200px;
+}
+
+@media (max-width: 600px) {
+  .destacadosContainer {
+    grid-template-columns: 1fr;
+  }
+}
+
+.tituloDestacados {
+  width: 90%;
+  max-width: 1200px;
+  text-align: left;
+}
+
+.tituloDestacados h2 {
+  margin-bottom: 0.5rem;
+  font-family: Arial, sans-serif;
+  font-weight: 600;
+  font-size: 1.2rem;
+
+}
+
+.tituloDestacados hr {
+  border: none;
+  height: 1px;
+  background-color: #ccc; 
+}
+
+
+.catalogoBoton {
+  background-color: #6d5f53; 
+  color: white;
+  padding: 12px 28px;
+  border-radius: 20px;
+  font-weight: bold;
+  text-decoration: none; 
+  text-align: center;
+  border: none;
+  font-family: Arial, sans-serif;
+  transition: background-color 0.3s ease;
+  width: auto; 
+  margin-top: 1rem; 
+}
+
+.catalogoBoton:hover {
+  background-color: #5a4a3c;
+}
+
+
+.texto {
+  margin: 0;
+  font-size: 1.1rem;
+  color: var(--color-textos);
+}

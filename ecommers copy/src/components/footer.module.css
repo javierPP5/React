@@ -1,0 +1,23 @@
+
+.footer {
+    display: flex;
+    gap: 1rem;
+    justify-content: space-between;
+    padding: 4px;
+    flex-wrap: wrap;
+    box-sizing: border-box;}
+
+.color-fondo {
+    background-color: rgba(44, 78, 81, 1); 
+}
+
+.logoContainer {
+  display: flex;
+  align-items: center;
+  gap: 1rem; 
+}
+
+.logo {
+  height: 55px; 
+  width: auto; 
+}

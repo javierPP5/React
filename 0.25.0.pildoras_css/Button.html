@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Estilando botones</title>
+    <style>
+      .nav-item {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        padding: 12px 24px;
+        border-radius: 8px;
+
+        cursor: pointer;
+        transition: all 0.3s;
+      }
+
+      /*Pseudoclases de los enlaces: LVHA */
+      .link {
+        text-decoration: none;
+        &:link,
+        &:visited {
+          color: #e67e22;
+        }
+
+        &:hover,
+        &:active {
+          color: #17d8d2;
+        }
+      }
+
+      .button {
+        color: blue;
+        background-color: #efebeb;
+        border: none;
+        &:hover {
+          color: rgb(0, 0, 46);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <button class="nav-item button">
+      Soy un button que ejecuta una accion
+    </button>
+    <a class="nav-item link"
+      >Soy un enlace que voy a otra vista o a otra parte de la página</a
+    >
+  </body>
+</html>

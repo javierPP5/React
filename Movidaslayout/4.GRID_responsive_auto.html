@@ -1,0 +1,77 @@
+<!--
+GRID - RESPONSIVE AUTO:
+  Para que sea responsive el auto, el width grid container ha de estar en vw
+  Entonces, por un lado tenemos que el auto, te ahorra la media query, pero tienes
+  la restricción de que width de grid container en vw, y por otro lado, no permite
+  especificar exactamente número de columnas, pues hay que tener esto en cuenta a la hora 
+  de decantarse o por un auto o por una media query
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GRID - RESPONSIVE AUTO</title>
+    <style>
+      .item--1 {
+        background-color: blueviolet;
+      }
+      .item--2 {
+        background-color: orangered;
+      }
+      .item--3 {
+        background-color: green;
+      }
+      .item--4 {
+        background-color: goldenrod;
+      }
+      .item--5 {
+        background-color: palevioletred;
+      }
+      .item--6 {
+        background-color: steelblue;
+      }
+      .item--7 {
+        background-color: yellow;
+      }
+      .item--8 {
+        background-color: crimson;
+      }
+
+      .item {
+        padding: 20px;
+      }
+      .container {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        grid-auto-rows: 1fr;
+        justify-content: center;
+        align-content: end;
+        gap: 30px;
+
+        padding: 20px;
+        font-family: sans-serif;
+        background-color: rgba(0, 0, 0, 0.537);
+        font-size: 40px;
+        margin: 40px auto;
+        width: 90vw;
+        max-width: 1200px;
+        height: 400px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="item item--1">child 1</div>
+      <div class="item item--2">child 2</div>
+      <div class="item item--3">child 3</div>
+      <div class="item item--4">child 4</div>
+      <div class="item item--5">child 5</div>
+      <div class="item item--6">child 6</div>
+      <div class="item item--7">child 7</div>
+      <div class="item item--8">child 8</div>
+    </div>
+  </body>
+</html>

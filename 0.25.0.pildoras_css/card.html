@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EJEMPLO REVIEW CON GRID Y CON FLEX</title>
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+      .review {
+        background-color: aqua;
+        display: grid;
+        grid-template-columns: auto 1fr;
+        gap: 16px;
+        align-items: center;
+        padding: 16px;
+        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.3);
+        width: 200px;
+
+        .review__avatar {
+          width: 60px;
+          border-radius: 50%;
+          object-fit: cover;
+        }
+        .review__content {
+          display: flex;
+          flex-direction: column;
+          gap: 8px;
+          .review__author {
+            font-size: 16px;
+            color: #333;
+          }
+          .review__message {
+            font-size: 14px;
+            color: #555;
+          }
+        }
+      }
+
+      .button {
+        max-width: 200px;
+      }
+
+      .button--primary {
+        background-color: rgb(255, 0, 64);
+      }
+
+      .button--secondary {
+        background-color: chocolate;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="review">
+      <div>
+        <img
+          src="https://randomuser.me/api/portraits/women/5.jpg"
+          alt="author"
+          class="review__avatar"
+        />
+      </div>
+      <div class="review__content">
+        <strong class="review__author">roro</strong>
+        <p class="review__message">hfklhgdfghdfghk</p>
+        <div style="display: flex; gap: 12px">
+          <button class="button button--primary">Añadir reseña</button>
+          <button class="button button--secondary">Eliminar reseña</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

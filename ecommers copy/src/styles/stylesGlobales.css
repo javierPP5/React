@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Hepta+Slab:wght@1..900&display=swap');
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+  line-height: 1;
+  font-weight: 400;
+  color: #555;
+}
+
+:root {
+  --background-main: #EAEDEE;
+  --background-cardContainer: #BEC8C9;
+  --color-textos: #0F1B1C;
+}
+
+.error {
+  color: red;
+  font-size: 14px;
+}
